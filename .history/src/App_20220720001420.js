@@ -4,7 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 const App = () => {
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState([
+     
+  ]);
   const getMovieRequest = async () => {
     const url = "https://api.themoviedb.org/3/movie/popular?api_key=1a149356193d56f9143f86bca179b03e"
     
