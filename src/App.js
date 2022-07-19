@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import MovieList from '../src/components/MovieList';
 const App = () =>  {
   const [movies, setMovies] = useState([
     {
@@ -44,7 +44,11 @@ const App = () =>  {
     "vote_average": 7,
     "vote_count": 1622
 },]);
-  return <div>Hello World</div>;  
+  return (
+  <div> 
+    <MovieList movies={movies} />
+    </div>
+    );  
 };
 
 export default App;
