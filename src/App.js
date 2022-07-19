@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import MovieList from "../src/components/MovieList";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -86,7 +86,12 @@ const App = () => {
     const responseJson = await response.json();
 
     console.log(responseJson);
-  }
+  };
+
+  useEffect(()=>{
+    getMovieRequest();
+  }, []);
+  
   return (
     <div className="container-fluid movie-app">
       <div className="row">
