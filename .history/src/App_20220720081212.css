@@ -12,6 +12,7 @@
  
  .movie-img {
      width: 400px;
+     heigth: 400px;
      position: relative;
      overflow-y: auto;
  }

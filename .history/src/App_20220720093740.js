@@ -10,12 +10,13 @@ const App = () => {
   const [searchValue, setSearchValue] = useState('');
 
   const getMovieRequest = async (searchValue) => {
-    const url = `https://api.themoviedb.org/3/search/movie?query=${searchValue}&api_key=1a149356193d56f9143f86bca179b03e`
+    const url = `https://api.themoviedb.org/3/search/movie?query=Avengers&api_key=1a149356193d56f9143f86bca179b03e`
     
     const response = await fetch(url);
 
     const responseJson = await response.json();
 
+    
     if(responseJson.results){
       setMovies(responseJson.results);
     }

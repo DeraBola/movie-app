@@ -10,26 +10,26 @@ const App = () => {
   const [searchValue, setSearchValue] = useState('');
 
   const getMovieRequest = async (searchValue) => {
-    const url = `https://api.themoviedb.org/3/search/movie?query=${searchValue}&api_key=1a149356193d56f9143f86bca179b03e`
+    const url = `https://api.themoviedb.org/3/search/movie?=${searchValue}api_key=1a149356193d56f9143f86bca179b03e&query`
     
     const response = await fetch(url);
 
     const responseJson = await response.json();
 
-    if(responseJson.results){
-      setMovies(responseJson.results);
-    }
+    console.log(responseJson);
+    if
+    setMovies(responseJson.results);
   };
 
   useEffect(()=>{
-    getMovieRequest(searchValue);
+    getMovieRequest(setsearchValue);
   }, [searchValue]);
   
   return (
     <div className="container-fluid movie-app">
       <div className="row d-flex align-items-center mt-4 mb-4">
         <MovieListHeading heading='Movies' />
-        < SearchBox searchValue={searchValue} setSearchValue={setSearchValue}/>
+        < SearchBox />
       </div>
       <div className="row">
         <MovieList movies={movies} />

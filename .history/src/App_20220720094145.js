@@ -16,6 +16,7 @@ const App = () => {
 
     const responseJson = await response.json();
 
+    
     if(responseJson.results){
       setMovies(responseJson.results);
     }
