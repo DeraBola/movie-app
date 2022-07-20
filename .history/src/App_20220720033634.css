@@ -1,0 +1,24 @@
+ body {
+     background: #141414;
+     color: rgb(24, 73, 208)255, 255, 255);
+     text-decoration: none;
+     list-style-type: none;
+ }
+ 
+ .movie-app>.row {
+     overflow-x: auto;
+     flex-wrap: nowrap;
+ }
+ 
+ .movie-img {
+     width: 300px;
+ }
+ 
+ .movie-img .card-body {
+     width: auto;
+ }
+ 
+ .movie-img img {
+     width: 200px;
+     height: auto;
+ }

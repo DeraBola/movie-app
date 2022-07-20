@@ -1,0 +1,22 @@
+ body {
+     background: #141414;
+     color: #fff;
+     text-decoration: none;
+     list-style-type: none;
+ }
+ 
+ .movie-app>.row {
+     overflow-x: auto;
+     flex-wrap: nowrap;
+ }
+ 
+ .movie-img {
+     width: auto;
+ }
+ 
+ .movie-img .card-body {}
+ 
+ .movie-img img {
+     width: 200px;
+     height: auto;
+ }
