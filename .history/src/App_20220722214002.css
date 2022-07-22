@@ -56,9 +56,7 @@
      border-left: 1px solid #fff;
  }
  
- .movie-img:hover .overlay {
-     opacity: 1;
- }
+ .movie-img:hover .overlay {}
  
  .overlay {
      position: absolute;

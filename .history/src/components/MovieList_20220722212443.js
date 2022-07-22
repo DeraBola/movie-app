@@ -9,8 +9,9 @@ const MovieList = (props) => {
   return (
     <>
       {props.movies.map((movie, index) => (
-        <div key={movie.id} className="movie-img d-flex justify-content-start m-2">  
+        <div key={movie.id} className="movie-img   d-flex justify-content-start m-2">  
               <img src={API_IMG + movie.poster_path} className='card-img-top' alt="movie" /> 
+              <div className="overlay d-flex align-items-center justify-content-center" ></div>
             <div className="movie-info"> 
                 <h3>{movie.title}</h3>
                 <div className='movie-over'>  
@@ -18,7 +19,6 @@ const MovieList = (props) => {
                 <p>{movie.overview}</p>
                 </div>    
           </div>
-          <div className="overlay d-flex align-items-center justify-content-center"> </div>
         </div>
       ))}
     </>

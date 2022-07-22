@@ -30,6 +30,7 @@
  .movie-img .movie-info {
      padding: 1.5rem;
      top: 0;
+     ds
  }
  
  .movie-img .movie-info h3 {
@@ -54,20 +55,4 @@
      border-radius: 12px;
      border-top: 1px solid #fff;
      border-left: 1px solid #fff;
- }
- 
- .movie-img:hover .overlay {
-     opacity: 1;
- }
- 
- .overlay {
-     position: absolute;
-     background: rgba(0, 0, 0, 0.8);
-     width: 100%;
-     transition: 0.5s ease;
-     opacity: 0;
-     bottom: 0;
-     font-size: 20px;
-     padding: 20px;
-     text-align: center;
  }

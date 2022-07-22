@@ -18,7 +18,7 @@ const MovieList = (props) => {
                 <p>{movie.overview}</p>
                 </div>    
           </div>
-          <div className="overlay d-flex align-items-center justify-content-center"> </div>
+          <
         </div>
       ))}
     </>
