@@ -14,4 +14,3 @@ const AddFavourite = () =>{
         </>
     );
 };
-export default AddFavourite ;
