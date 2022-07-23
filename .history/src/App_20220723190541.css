@@ -32,6 +32,19 @@
      padding: 1.5rem;
  }
  
+ .movie-img .movie-info h3 {
+     font-size: 25px;
+     top: 0;
+ }
+ 
+ .movie-img .movie-info h6 {
+     font-size: 15px;
+ }
+ 
+ .movie-img .movie-info p {
+     font-size: 15px;
+ }
+ 
  .movie-info .movie-over {
      position: absolute;
      padding: 1rem;
@@ -42,11 +55,6 @@
      border-radius: 12px;
      border-top: 1px solid #fff;
      border-left: 1px solid #fff;
- }
- 
- .movie-info h3 {
-     font-size: 25px;
-     top: 0;
  }
  
  .movie-info .movie-over h6 {
