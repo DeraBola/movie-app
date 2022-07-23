@@ -53,8 +53,7 @@ const removeFavouriteMovie = (movie) => {
   const newFavouriteList = favourites.filter(
     (favourite) => favourite.id !== movie.id
   );
-  setFavourites(newFavouriteList);
-  saveToLocalStorage(newFavouriteList);
+  setFavourites(newFavouriteList);saveToLocalStorage(newFavouriteList);
 }
 
   return (

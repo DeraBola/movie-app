@@ -31,12 +31,8 @@ const App = () => {
   }, [searchValue]);
 
   useEffect(()=>{
-    const movieFavourites = JSON.parse(
-      localStorage.getItem('react-movie-app-favourites')
-    );
-
-    setFavourites(movieFavourites);
-}, []); 
+    const movieFavourites = JSON.parse(localStorage.getItem('react-movie-app-favourites'))
+  }, [searchValue]);
 
 
   const saveToLocalStorage = (items) =>{
@@ -54,7 +50,6 @@ const removeFavouriteMovie = (movie) => {
     (favourite) => favourite.id !== movie.id
   );
   setFavourites(newFavouriteList);
-  saveToLocalStorage(newFavouriteList);
 }
 
   return (

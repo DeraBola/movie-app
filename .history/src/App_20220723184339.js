@@ -36,7 +36,7 @@ const App = () => {
     );
 
     setFavourites(movieFavourites);
-}, []); 
+}, []}; 
 
 
   const saveToLocalStorage = (items) =>{
@@ -54,7 +54,6 @@ const removeFavouriteMovie = (movie) => {
     (favourite) => favourite.id !== movie.id
   );
   setFavourites(newFavouriteList);
-  saveToLocalStorage(newFavouriteList);
 }
 
   return (
