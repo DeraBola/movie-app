@@ -35,13 +35,6 @@ const addFavouriteMovie = (movie) => {
   setFavourites(newFavouriteList);
 }
 
-const removeFavouriteMovie = (movie) => {
-  const newFavouriteList = favourites.filter(
-    (favourite) => favourite.id !== movie.id
-  );
-  setFavourites(newFavouriteList);
-}
-
   return (
     <div className="container-fluid movie-app">
       <div className="row d-flex align-items-center mt-4 mb-4">
@@ -60,8 +53,8 @@ const removeFavouriteMovie = (movie) => {
       <div className="row">
         <MovieList 
         movies={favourites} 
-        handleFavouritesClick={removeFavouriteMovie } 
-        favouriteComponent={RemoveFavourites}/>
+        handleFavouritesClick={addFavouriteMovie} 
+        favouriteComponent={AddFavourites}/>
       </div>
     </div>
   );

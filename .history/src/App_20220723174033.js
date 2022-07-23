@@ -4,9 +4,7 @@ import MovieListHeading from "../src/components/MovieListHeading";
 import SearchBox  from "../src/components/SearchBox";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AddFavourites from "../src/components/AddFavourites";
-import "./App.css";
-import RemoveFavourites from "../src/components/RemoveFavourites";
-
+import "./App.css";RemoveFavourites
 
 const App = () => {
   const [movies, setMovies] = useState([]);  
@@ -35,13 +33,6 @@ const addFavouriteMovie = (movie) => {
   setFavourites(newFavouriteList);
 }
 
-const removeFavouriteMovie = (movie) => {
-  const newFavouriteList = favourites.filter(
-    (favourite) => favourite.id !== movie.id
-  );
-  setFavourites(newFavouriteList);
-}
-
   return (
     <div className="container-fluid movie-app">
       <div className="row d-flex align-items-center mt-4 mb-4">
@@ -60,8 +51,8 @@ const removeFavouriteMovie = (movie) => {
       <div className="row">
         <MovieList 
         movies={favourites} 
-        handleFavouritesClick={removeFavouriteMovie } 
-        favouriteComponent={RemoveFavourites}/>
+        handleFavouritesClick={addFavouriteMovie} 
+        favouriteComponent={AddFavourites}/>
       </div>
     </div>
   );

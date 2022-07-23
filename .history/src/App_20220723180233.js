@@ -37,9 +37,8 @@ const addFavouriteMovie = (movie) => {
 
 const removeFavouriteMovie = (movie) => {
   const newFavouriteList = favourites.filter(
-    (favourite) => favourite.id !== movie.id
-  );
-  setFavourites(newFavouriteList);
+    (favourite) => favourite.id !== movie.
+  ) 
 }
 
   return (
@@ -60,7 +59,7 @@ const removeFavouriteMovie = (movie) => {
       <div className="row">
         <MovieList 
         movies={favourites} 
-        handleFavouritesClick={removeFavouriteMovie } 
+        handleFavouritesClick={addFavouriteMovie} 
         favouriteComponent={RemoveFavourites}/>
       </div>
     </div>
