@@ -50,7 +50,7 @@ const addFavouriteMovie = (movie) => {
       </div>
       <div className="row">
         <MovieList 
-        movies={favourites} 
+        movies={movies} 
         handleFavouritesClick={addFavouriteMovie} 
         favouriteComponent={AddFavourites}/>
       </div>

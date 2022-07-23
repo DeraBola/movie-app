@@ -28,11 +28,6 @@ const App = () => {
     getMovieRequest(searchValue);
   }, [searchValue]);
   
-const addFavouriteMovie = (movie) => {
-  const newFavouriteList = [...favourites, movie];
-  setFavourites(newFavouriteList);
-}
-
   return (
     <div className="container-fluid movie-app">
       <div className="row d-flex align-items-center mt-4 mb-4">
@@ -40,19 +35,7 @@ const addFavouriteMovie = (movie) => {
         < SearchBox searchValue={searchValue} setSearchValue={setSearchValue}/>
       </div>
       <div className="row">
-        <MovieList 
-        movies={movies} 
-        handleFavouritesClick={addFavouriteMovie} 
-        favouriteComponent={AddFavourites}/>
-      </div>
-      <div className="row d-flex align-items-center mt-4 mb-4">
-        <MovieListHeading heading='Favourites' />
-      </div>
-      <div className="row">
-        <MovieList 
-        movies={favourites} 
-        handleFavouritesClick={addFavouriteMovie} 
-        favouriteComponent={AddFavourites}/>
+        <MovieList movies={movies} favouriteComponent={AddFavourites}/>
       </div>
     </div>
   );

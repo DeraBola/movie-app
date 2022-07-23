@@ -13,6 +13,7 @@
  .movie-img {
      width: 400px;
      overflow-y: auto;
+     overflow-y: none;
      position: relative;
      transition: transform 0.2s;
  }
