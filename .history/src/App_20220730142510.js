@@ -9,7 +9,7 @@ import RemoveFavourites from "../src/components/RemoveFavourites";
 
 
 const App = () => {
-  const [movies, setMovies] = useState([]);  
+  const [movies, setMovies] = useState(['minion']);  
   
   const [favourites, setFavourites] = useState([]);
 
@@ -75,6 +75,7 @@ const removeFavouriteMovie = (movie) => {
       </div>
       <div className="row">
         <MovieList 
+        
         movies={favourites} 
         handleFavouritesClick={removeFavouriteMovie } 
         favouriteComponent={RemoveFavourites}/>

@@ -9,7 +9,7 @@ import RemoveFavourites from "../src/components/RemoveFavourites";
 
 
 const App = () => {
-  const [movies, setMovies] = useState([]);  
+  const [movies, setMovies] = useState('ioio');  
   
   const [favourites, setFavourites] = useState([]);
 
