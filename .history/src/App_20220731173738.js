@@ -9,7 +9,7 @@ import RemoveFavourites from "../src/components/RemoveFavourites";
 
 
 const App = () => {
-  const [movies, setMovies] = useState([]);  
+  const [movies, setMovies] = useState(['star wars]);  
   
   const [favourites, setFavourites] = useState([]);
 
@@ -34,7 +34,7 @@ const App = () => {
   useEffect(()=>{
     const movieFavourites = JSON.parse(
       localStorage.getItem('react-movie-app-favourites')
-    )||[];
+    );
 
     setFavourites(movieFavourites);
 }, []); 

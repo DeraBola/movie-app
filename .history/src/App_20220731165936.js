@@ -34,7 +34,7 @@ const App = () => {
   useEffect(()=>{
     const movieFavourites = JSON.parse(
       localStorage.getItem('react-movie-app-favourites')
-    )||[];
+    );
 
     setFavourites(movieFavourites);
 }, []); 
@@ -49,6 +49,15 @@ const addFavouriteMovie = (movie) => {
   setFavourites(newFavouriteList);
   saveToLocalStorage(newFavouriteList);
 };
+
+addFavouriteMovie [Symbol.iterator] = function(){
+  return{
+    next(){
+      retun {done:true;}
+    }
+  }
+  }
+
 
 const removeFavouriteMovie = (movie) => {
   const newFavouriteList = favourites.filter(
