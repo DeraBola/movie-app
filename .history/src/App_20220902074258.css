@@ -9,25 +9,15 @@
      overflow-x: auto;
      flex-wrap: nowrap;
      -ms-overflow-style: none;
-     scrollbar-width: none;
-     width: 100%;
-     margin-right: 1rem;
- }
- 
- .movie-app>.row::-webkit-scrollbar {
-     display: none;
+     scr
  }
  
  .movie-img {
-     padding: 1rem;
-     width: 600px;
-     height: 600px;
-     -ms-overflow-style: none;
-     scrollbar-width: none;
- }
- 
- .movie-img::-webkit-scrollbar {
-     display: none;
+     width: 400px;
+     height: 400px;
+     overflow-y: auto;
+     position: relative;
+     transition: transform 0.2s;
  }
  
  .movie-img:hover {
@@ -41,12 +31,11 @@
  }
  
  .movie-img .movie-info {
-     flex: 1;
      padding: 1.5rem;
-     height: 200px;
  }
  
  .movie-info .movie-over {
+     position: absolute;
      padding: 1rem;
      background: rgba(255, 255, 255, 0.2);
      box-shadow: 04px 30px rgba(0, 0, 0, 0.1);
@@ -55,7 +44,6 @@
      border-radius: 12px;
      border-top: 1px solid #fff;
      border-left: 1px solid #fff;
-     width: 300px;
  }
  
  .movie-info h3 {

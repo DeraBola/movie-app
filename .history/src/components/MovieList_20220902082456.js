@@ -9,8 +9,8 @@ const MovieList = (props) => {
   return (
     <>     
       {props.movies?.map((movie, id) => (
-        <div key={id} className="movie-img d-flex justify-content-start m-2"> 
-         <div className="movie-poster"><img src={API_IMG + movie.poster_path} className='card-img-top' alt="movie" /></div>
+        <div key={id} className="movie-img d-flex justify-content-start m-2">  <div></div>
+               
               <div className="movie-info"> 
                 <h3>{movie.title}</h3>
                 <div className='movie-over'>  

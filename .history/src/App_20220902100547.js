@@ -60,7 +60,7 @@ const removeFavouriteMovie = (movie) => {
 
   return (
     <div className="container-fluid movie-app">
-      <div className="row d-flex align-items-center mt-4 mb-1">
+      <div className="row d-flex align-items-center mt-4 mb-2">
         <MovieListHeading heading='Movies' />
         < SearchBox searchValue={searchValue} setSearchValue={setSearchValue}/>
       </div>
@@ -70,7 +70,7 @@ const removeFavouriteMovie = (movie) => {
         handleFavouritesClick={addFavouriteMovie} 
         favouriteComponent={AddFavourites}/>
       </div>
-      <div className="row d-flex align-items-center mt-4 mb-1">
+      <div className="row d-flex align-items-center mt-4 mb-4">
         <MovieListHeading heading='Favourites' />
       </div>
       <div className="row">

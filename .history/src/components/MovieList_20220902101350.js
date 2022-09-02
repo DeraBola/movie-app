@@ -20,7 +20,7 @@ const MovieList = (props) => {
           </div>
           <div 
           onClick ={ () => props.handleFavouritesClick(movie)} 
-          className="overlay d-flex align-items-center justify-content-center"
+          className="overlay d-flex align-items-center justify-content-center mr-2"
           >
             <FavouriteComponent />
           </div>

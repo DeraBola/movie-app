@@ -11,7 +11,6 @@
      -ms-overflow-style: none;
      scrollbar-width: none;
      width: 100%;
-     margin-right: 1rem;
  }
  
  .movie-app>.row::-webkit-scrollbar {
@@ -20,8 +19,9 @@
  
  .movie-img {
      padding: 1rem;
-     width: 600px;
-     height: 600px;
+     width: ;
+     height: 300px;
+     transition: transform 0.2s;
      -ms-overflow-style: none;
      scrollbar-width: none;
  }
@@ -36,14 +36,12 @@
  }
  
  .movie-img img {
-     width: 250px;
-     height: 250px;
+     width: 100%;
  }
  
  .movie-img .movie-info {
      flex: 1;
      padding: 1.5rem;
-     height: 200px;
  }
  
  .movie-info .movie-over {
