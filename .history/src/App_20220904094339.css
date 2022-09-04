@@ -7,7 +7,7 @@
  
  .movie-app>.row {
      overflow-x: scroll;
-     flex-wrap: nowrap;
+     flex-wrap: wrap;
      -ms-overflow-style: none;
      scrollbar-width: none;
      width: 100%;
@@ -66,9 +66,7 @@
      border-left: 1px solid #fff;
  }
  
- .movie-over p {
-     color: #000;
- }
+ .movie-over {}
  
  .movie-info h3 {
      font-size: 25px;

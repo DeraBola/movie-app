@@ -14,6 +14,7 @@ const MovieList = (props) => {
               <div className="movie-info"> 
                 <h3>{movie.title}</h3>
                 <div className='movie-over'>  
+                  <h6>Overview</h6>
                 <p>{movie.overview}</p>
                 </div>    
           </div>

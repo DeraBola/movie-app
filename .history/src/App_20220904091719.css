@@ -20,7 +20,7 @@
  
  .movie-img {
      position: relative;
-     width: 350px;
+     width: 200px;
      -ms-overflow-style: none;
      scrollbar-width: none;
      overflow: hidden;
@@ -35,7 +35,7 @@
  }
  
  .movie-img img {
-     max-width: 100%;
+     width: 100%;
      border-radius: 4px;
  }
  
@@ -51,9 +51,7 @@
      transition: transform 0.2s ease-in-out;
  }
  
- .movie-img:hover .movie-info {
-     transform: translateY(0%);
- }
+ .movie-img:hover {}
  
  .movie-over {
      padding: 1rem;
@@ -66,14 +64,14 @@
      border-left: 1px solid #fff;
  }
  
- .movie-over p {
-     color: #000;
- }
- 
  .movie-info h3 {
      font-size: 25px;
-     color: #fff;
-     text-transform: capitalize;
+     top: 0;
+ }
+ 
+ .movie-info .movie-over h6 {
+     text-transform: uppercase;
+     font-size: 20px;
  }
  
  .movie-img:hover .overlay {
@@ -82,7 +80,7 @@
  
  .overlay {
      position: absolute;
-     background: rgba(0, 0, 0, 0.63);
+     background: rgba(0, 0, 0, 0.8);
      width: 100%;
      transition: 0.5s ease;
      opacity: 0;

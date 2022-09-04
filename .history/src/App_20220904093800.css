@@ -66,13 +66,9 @@
      border-left: 1px solid #fff;
  }
  
- .movie-over p {
-     color: #000;
- }
- 
  .movie-info h3 {
      font-size: 25px;
-     color: #fff;
+     color: ;
      text-transform: capitalize;
  }
  

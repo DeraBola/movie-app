@@ -20,7 +20,7 @@
  
  .movie-img {
      position: relative;
-     width: 350px;
+     width: 300px;
      -ms-overflow-style: none;
      scrollbar-width: none;
      overflow: hidden;
@@ -66,14 +66,15 @@
      border-left: 1px solid #fff;
  }
  
- .movie-over p {
-     color: #000;
- }
- 
  .movie-info h3 {
      font-size: 25px;
-     color: #fff;
+     color: rgb(117, 97, 97)6, 51, 51);
      text-transform: capitalize;
+ }
+ 
+ .movie-over h6 {
+     text-transform: uppercase;
+     font-size: 20px;
  }
  
  .movie-img:hover .overlay {
@@ -82,7 +83,7 @@
  
  .overlay {
      position: absolute;
-     background: rgba(0, 0, 0, 0.63);
+     background: rgba(0, 0, 0, 0.8);
      width: 100%;
      transition: 0.5s ease;
      opacity: 0;

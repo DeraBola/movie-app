@@ -7,7 +7,7 @@
  
  .movie-app>.row {
      overflow-x: scroll;
-     flex-wrap: nowrap;
+     flex-wrap: nwrap;
      -ms-overflow-style: none;
      scrollbar-width: none;
      width: 100%;
