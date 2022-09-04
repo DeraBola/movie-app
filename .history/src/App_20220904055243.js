@@ -1,4 +1,4 @@
-import React, { useEffect, useState  } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import MovieList from "../src/components/MovieList";
 import MovieListHeading from "../src/components/MovieListHeading";
 import SearchBox from "../src/components/SearchBox";
@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import AddFavourites from "../src/components/AddFavourites";
 import "./App.css";
 import RemoveFavourites from "../src/components/RemoveFavourites";
- 
+import 
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -63,7 +63,7 @@ const App = () => {
         <MovieListHeading heading="Movies" />
         <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
-      <div className="row"  >
+      <div className="row" ref={scrollRef}>
         <MovieList
           movies={movies}
           handleFavouritesClick={addFavouriteMovie}

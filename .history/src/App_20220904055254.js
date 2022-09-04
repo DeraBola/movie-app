@@ -63,7 +63,7 @@ const App = () => {
         <MovieListHeading heading="Movies" />
         <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
-      <div className="row"  >
+      <div className="row" ref={scrollRef}>
         <MovieList
           movies={movies}
           handleFavouritesClick={addFavouriteMovie}

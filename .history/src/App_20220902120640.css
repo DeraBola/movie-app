@@ -5,8 +5,17 @@
      list-style-type: none;
  }
  
+ .movie-app {
+     -ms-overflow-style: none;
+     scrollbar-width: none;
+ }
+ 
+ .movie-app::-webkit-scrollbar {
+     display: none;
+ }
+ 
  .movie-app>.row {
-     overflow-x: scroll;
+     overflow-x: auto;
      flex-wrap: nowrap;
      -ms-overflow-style: none;
      scrollbar-width: none;
@@ -82,4 +91,22 @@
      font-size: 20px;
      padding: 20px;
      text-align: center;
+ }
+ 
+ .poster-images_arrow {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 1rem;
+     top: 50%;
+     position: absolute;
+ }
+ 
+ .poster__arrow-icon {
+     color: #000;
+     font-size: 2rem;
+     cursor: pointer;
+     background-color: #fff;
+     border-radius: 5px;
  }
